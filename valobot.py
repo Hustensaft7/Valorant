@@ -8,14 +8,14 @@ import time
 import keyboard
 import winsound
 
-os.system("color d")
-os.system("cls")
-print("Version : 0.1              ")
-print("")
-print("Made by Hustensaft       ")
-print("")
-print("Choose your settings")
-print("")
+os.system("color d")                        #useless
+os.system("cls")                            #useless
+print("Version : 0.1              ")        #useless
+print("")                                   #useless
+print("Made by Hustensaft       ")          #useless
+print("")                                   #useless
+print("Choose your settings")               #useless
+print("")                                   #useless
 
 fov = int(input("FOV: "))
 print("")
@@ -23,7 +23,7 @@ print("")
 sct = mss()
  
  
-arduino = serial.Serial('COM3', 115200)
+arduino = serial.Serial('COM3', 115200)     #change the COM3 to your arduinos COM
  
 screenshot = sct.monitors[1]
 screenshot['left'] = int((screenshot['width'] / 2) - (fov / 2))
@@ -32,16 +32,16 @@ screenshot['width'] = fov
 screenshot['height'] = fov
 center = fov/2
 
-embaixo = np.array([140,111,160])
-emcima = np.array([148,154,194])
+embaixo = np.array([140,111,160]) #highest color 
+emcima = np.array([148,154,194]) # lowest color
 
-speed = float(input("SPEED: "))
+speed = float(input("SPEED: "))     #speed for the moving of your crosshair
 print("")
 print("You are ready to go ")
 print("")
 print("Enjoy your day ! ")
 print("")
-current_time = time.strftime("    %H:%M:%S    ")
+current_time = time.strftime("    %H:%M:%S    ")        #current time of your system
 print("The time is", current_time)
 print("")
 
