@@ -1,0 +1,7 @@
+pip install opencv-python
+python -m pip install mss
+pip install numpy
+pip install pywin32
+python -m pip install pyserial
+pip install keyboard
+pip install python-time
