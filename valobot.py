@@ -17,7 +17,7 @@ print("")                                   #useless
 print("Choose your settings")               #useless
 print("")                                   #useless
 
-fov = int(input("FOV: "))
+fov = int(input("FOV: "))                   # 1-5 is recommended 
 print("")
  
 sct = mss()
@@ -60,7 +60,7 @@ def mousemove(x):
 toggle = False
 
 while True:
-        if keyboard.is_pressed("f9"):
+        if keyboard.is_pressed("f9"):           # The "f9" can be changed to a random key !!Not Mouse 4 or 5 (side buttons)!!
                 toggle = not toggle
                 frequency = 1500
                 duration = 100
